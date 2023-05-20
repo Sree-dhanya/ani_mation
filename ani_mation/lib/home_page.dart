@@ -41,13 +41,24 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 199, 58, 227),
+      backgroundColor: Color.fromARGB(255, 44, 42, 42),
       body: Center(
         child: Stack(
           alignment: Alignment.center,
           children: [
             Transform.rotate(
-              angle: _rotationAnimation.value,
+              angle: _rotationAnimation.value + 0.2,
+              child: Container(
+                width: 280,
+                height: 280,
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 96, 56, 166),
+                    borderRadius:
+                        BorderRadius.circular(_radiusAnimation.value)),
+              ),
+            ),
+            Transform.rotate(
+              angle: _rotationAnimation.value + 0.4,
               child: Container(
                 width: 225,
                 height: 225,
@@ -58,7 +69,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
             Transform.rotate(
-              angle: _rotationAnimation.value + 0.2,
+              angle: _rotationAnimation.value + 0.6,
               child: Container(
                 width: 200,
                 height: 200,
@@ -69,7 +80,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
             Transform.rotate(
-              angle: _rotationAnimation.value + 0.2,
+              angle: _rotationAnimation.value + 0.8,
               child: Container(
                 width: 175,
                 height: 175,
@@ -80,7 +91,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
             Transform.rotate(
-              angle: _rotationAnimation.value + 0.4,
+              angle: _rotationAnimation.value + 1.0,
               child: Container(
                 width: 125,
                 height: 125,
@@ -91,7 +102,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
             Transform.rotate(
-              angle: _rotationAnimation.value + 0.6,
+              angle: _rotationAnimation.value + 1.2,
               child: Container(
                 width: 75,
                 height: 75,
@@ -102,7 +113,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
             Transform.rotate(
-              angle: _rotationAnimation.value + 3.0,
+              angle: _rotationAnimation.value + 1.4,
               child: Container(
                 width: 50,
                 height: 50,
